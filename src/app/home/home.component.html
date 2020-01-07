@@ -1,0 +1,15 @@
+<div>
+	<h2>A List</h2>
+	<app-a-list [aList]='aList'></app-a-list>
+</div>
+
+<div>
+	<h2>Object List</h2>
+	<p>Should give same ouput as above, but for a generic type of input object.</p>
+
+	<app-object-list 
+		[type]='AType' 
+		[component]='AComponent'
+		[objects]='aList'>
+	</app-object-list>
+</div>	
